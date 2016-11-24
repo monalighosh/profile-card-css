@@ -193,3 +193,19 @@ p a:focus:after {
   color: #FFFFFF;
   text-shadow: -3px 5px 5px rgba(0,0,0,0.5); 
 }
+
+/* ================================================================ */
+/* Media Queries -------------------------------------- */
+/* ================================================================ */
+
+@media (max-width: 360px) and (orientation: portrait) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+}
