@@ -1,2 +1,2 @@
 # Profile Card
-Profile card created using HTM and CSS.
+Profile card created using HTML and CSS.
