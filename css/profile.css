@@ -1,0 +1,173 @@
+/* External fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,500italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+    background: #FFFFFF;
+}
+
+body, input, select, textarea {
+   color: #000000;
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   line-height: 26px;
+   font-weight: 400;
+   text-align: center;
+   letter-spacing: 1px;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 400; 
+  line-height: 28px;
+  margin: 8px 0;
+  padding: 0;
+} 
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p
+{
+margin: 0;
+padding: 10px;
+}
+
+/* Links */
+a,
+a:visited,
+a:active,
+a:hover {
+  text-decoration:none;
+}
+
+/* Structure */  
+
+.wrapper {
+  width:100%;
+  max-width: 430px; 
+  padding: 15px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #CCCCCC;
+  box-shadow: 0 0 5px 2px rgba(68,68,68,0.2);
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.header h1 {
+  font-size: 30px;
+
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: -2px 1px 0 #CCCCCC;
+}
+
+.header h1:after {
+  display: block;
+  content: '';
+  border: 0;
+  display: block;
+  height: 1px;
+  margin: 2px auto 7px auto;
+  width: 40%;
+  padding: 0;
+  height: 2px;
+  background-color: #ffe700;
+}
+
+.header h2 {
+  margin-top: -3px;
+}
+
+.about {
+  background-color: #ffe700;
+  padding: 10px 20px 20px 20px;
+}
+
+.about h2 {
+  text-transform: uppercase;
+}
+
+.about h2:after {
+  display: block;
+  content: '';
+  border: 0;
+  display: block;
+  height: 1px;
+  margin: 1px auto 7px auto;
+  width: 12%;
+  padding: 0;
+  height: 1px;
+  background-color: #000000;
+}
+.profile-pic{
+  background-color: #FFFFFF;
+  background-image: url(../images/image-bg.jpg);
+}
+
+.profile-pic img {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+p a {
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  color: #000;
+}
+
+p a:after {
+  display: block;
+  content: '';
+  border: 0;
+  display: block;
+  height: 2px;
+  margin: 0 auto 7px auto;
+  width: 12%;
+  padding: 0;
+  height: 1px;
+  background-color: #000000;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+p a:hover:after,
+p a:focus:after {
+  -webkit-transform: translateX(10px);
+  -ms-transform: scaleX(2);
+      transform: scaleX(2);
+}
+
+/* ================================================================ */
+/* Media Queries -------------------------------------- */
+/* ================================================================ */
+
+@media (max-width: 360px) and (orientation: portrait) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+}
